@@ -8,7 +8,7 @@ header{
     position: fixed;
     display: table;
     width: 100%;
-    height: 100px;
+    height: 80px;
     z-index: 100;
     .header-wrap{
         padding: 10px;
@@ -116,13 +116,13 @@ main{
     }
     .imageSlider{
         height: 500px;
-        background-color: #96be6d;
         .banner{
             height: 300px;
             .bannerImg{
                 width: 100%;
                 height: 500px;
                 background: url("../img/banner1.png");
+                background-position: 0px;
                 background-size: 100%;
             }
             .banner-description{
@@ -130,17 +130,36 @@ main{
                 top: 0px;
                 width: 60%;
                 height: 300px;
+                padding: 50px 50px;
                 margin-top: 100px;
                 background-color:#85c146;
+                color: white;
+                box-sizing: border-box;
                 clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
+                h1{
+                    font-size: 80px;
+                    font-weight: 600;
+                }
+                h3{
+                    font-size: 50px;
+                    font-weight: 400;
+
+                }
+                p{
+                    font-size:20px;
+                }
                 
             }
             .shopNow{
                 position: absolute;
                 top: 250px;
-                left: 020%;
-                width: 30%;
-                height: 100px;
+                left: 30%;
+                padding: 0px 20px;
+                color: white;
+                line-height: 70px;
+                text-align: center;
+                font-size: 35px;
+                font-weight: 900;
                 background-color:#587a33;
                 z-index: 20;
             }
@@ -148,10 +167,16 @@ main{
                 position: absolute;
                 top: 250px;
                 right: 0px;
-                width: 30%;
-                height: 100px;
-                margin-top: 100px;
-                background-color:#85c146;
+                padding: 10px 30px;
+                margin-top: 150px;
+                background: linear-gradient(90deg, #81ba30 0%, #24a47b 100%);
+                text-align: right;
+                h1{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 20px;
+                }
             }
         }
     }

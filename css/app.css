@@ -371,7 +371,7 @@ header {
   position: fixed;
   display: table;
   width: 100%;
-  height: 100px;
+  height: 80px;
   z-index: 100;
 }
 
@@ -503,7 +503,6 @@ main #cartFixed .cartLength {
 
 main .imageSlider {
   height: 500px;
-  background-color: #96be6d;
 }
 
 main .imageSlider .banner {
@@ -514,6 +513,7 @@ main .imageSlider .banner .bannerImg {
   width: 100%;
   height: 500px;
   background: url("../img/banner1.png");
+  background-position: 0px;
   background-size: 100%;
 }
 
@@ -522,18 +522,40 @@ main .imageSlider .banner .banner-description {
   top: 0px;
   width: 60%;
   height: 300px;
+  padding: 50px 50px;
   margin-top: 100px;
   background-color: #85c146;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
+}
+
+main .imageSlider .banner .banner-description h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+main .imageSlider .banner .banner-description h3 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+main .imageSlider .banner .banner-description p {
+  font-size: 20px;
 }
 
 main .imageSlider .banner .shopNow {
   position: absolute;
   top: 250px;
-  left: 020%;
-  width: 30%;
-  height: 100px;
+  left: 30%;
+  padding: 0px 20px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
   background-color: #587a33;
   z-index: 20;
 }
@@ -542,10 +564,19 @@ main .imageSlider .banner .banner-productDetails {
   position: absolute;
   top: 250px;
   right: 0px;
-  width: 30%;
-  height: 100px;
-  margin-top: 100px;
-  background-color: #85c146;
+  padding: 10px 30px;
+  margin-top: 150px;
+  background: -webkit-gradient(linear, left top, right top, from(#81ba30), to(#24a47b));
+  background: linear-gradient(90deg, #81ba30 0%, #24a47b 100%);
+  text-align: right;
+}
+
+main .imageSlider .banner .banner-productDetails h1 {
+  font-size: 40px;
+}
+
+main .imageSlider .banner .banner-productDetails p {
+  font-size: 20px;
 }
 
 main .productsDisplay {
