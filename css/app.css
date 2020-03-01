@@ -614,11 +614,20 @@ main .productsDisplay .productContainer .product .productPrice {
   left: 0px;
   width: 56px;
   height: 56px;
-  background-color: #b3cb91af;
+  background-color: #81ba30;
   line-height: 56px;
   font-weight: 600;
   text-align: center;
   border-radius: 50px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+main .productsDisplay .productContainer .product .productPrice:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 main .productsDisplay .productContainer .product .productImagenExtra {
@@ -776,13 +785,29 @@ footer {
 
 footer .footerMenu {
   position: relative;
-  min-height: 300px;
+  min-height: 10px;
+  text-align: center;
   background-color: #618a31;
+}
+
+footer .footerMenu .cell {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer .footerMenu .social i {
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  font-size: 150%;
 }
 
 footer .footerCopyright {
   position: relative;
-  min-height: 50px;
+  min-height: 40px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
   background-color: #3a531d;
 }
 /*# sourceMappingURL=app.css.map */
