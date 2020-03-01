@@ -456,7 +456,15 @@ header .header-wrap .header-left .header_dropdowns .options {
   width: 150px;
   padding: 5px 15px;
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: px;
+  border-radius: 2px;
+}
+
+header .header-wrap .header-left .header_dropdowns .options .optionsList {
+  width: 200px;
+  height: 400px;
+  margin-top: 5px;
+  margin-left: -15px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 header .header-wrap .header-left .header_dropdowns .options i.drop-down {

@@ -73,7 +73,14 @@ header{
                     width: 150px;
                     padding: 5px 15px;
                     background-color: rgba(0, 0, 0, 0.1);
-                    border-radius: px;
+                    border-radius: 2px;
+                    .optionsList{
+                        width: 200px;
+                        height: 400px;
+                        margin-top: 5px;
+                        margin-left: -15px;
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
                     i.drop-down{
                         float: right
                     }
