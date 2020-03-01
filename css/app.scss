@@ -184,32 +184,57 @@ main{
     .productsDisplay{
         width: 1000px;
         padding-top: 10px;
+        margin-bottom: 100px;
         .productContainer{
-            min-height: 250px;
             padding: 10px;
             box-sizing: border-box;
             background:rgba(0, 0, 0, 0.11);
             .product{
-                display: table;
                 width: calc(100% - 20px);
-                min-height: calc(100% - 20px);
                 margin: 10px;
                 transition-duration: 0.1s;
                 &:hover{
                     transform: scale(1.1);
                     transition-duration: 0.2s;
-
+                }
+                .productPrice{
+                    display: inline-block;
+                    position: relative;
+                    top: 56px;
+                    left: 0px;
+                    width: 56px;
+                    height: 56px;
+                    background-color: #b3cb91af;
+                    line-height: 56px;
+                    font-weight: 600;
+                    text-align: center;
+                    border-radius: 50px;
                 }
                 .productImagenExtra{
                     position: relative;
                     width: 100%;
                     height: 200px;
                     background-color: #b3cb91;
+                    clip-path: polygon(50% 0, 99% 0, 100% 100%, 0 100%, 0 50%);
+                    background-size: auto 100%;
+                    .productName{
+                        display: inline-block;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                        width: 50%;
+                        padding: 5px 20px;
+                        background-color: #b3cb91e1;
+                        font-weight: 500;
+                        text-align: center;
+                        border-radius: 10px 0px 0px 0px;
+                    }
                 }
                 .addToCart_Panel{
                     height: 50px;
                     width: 100%;
-                    background-color: #728d4e;
+                    font-weight: 500;
+                    background-color: #4bac5c;
                     .counter{
                         float: left;
                         display: inline-block;
@@ -217,8 +242,18 @@ main{
                         width: 50%;
                         padding: 13px 10px;
                         .minus{
+                            cursor: pointer;
                             float: left;
                             font-size: 25px;
+                            transition-duration: 0.05s;
+                            &:hover{
+                                transform: scale(1.1);
+                                transition-duration: 0.1s;
+                            }
+                            &:active{
+                                transform: scale(0.9);
+                                transition-duration: 0.1s;
+                            }
                         }
                         .count{
                             float: left;
@@ -228,11 +263,22 @@ main{
                             line-height: 25px;
                         }
                         .add{
+                            cursor: pointer;
                             float: right;
                             font-size: 25px;
+                            transition-duration: 0.05s;
+                            &:hover{
+                                transform: scale(1.1);
+                                transition-duration: 0.1s;
+                            }
+                            &:active{
+                                transform: scale(0.9);
+                                transition-duration: 0.1s;
+                            }
                         }
                     }
                     .addToCart_button{
+                        cursor: pointer;
                         float: left;
                         display: inline-block;
                         height: 100%;
@@ -241,10 +287,14 @@ main{
                         text-align: center;
                         font-size: 13px;
                         box-sizing: border-box;
+                        &:active{
+                            transform: scale(0.9);
+                            transition-duration: 0.1s;
+                        }
                         p{
                             padding: 10px;
                             height: 30px;
-                            color: white;
+                            color: #cdf7d5;;
                             background-color: #171d0d;
                             border-radius: 4px;
                             transition-duration: 0.05s;

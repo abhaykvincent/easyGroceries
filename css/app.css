@@ -583,10 +583,10 @@ main .imageSlider .banner .banner-productDetails p {
 main .productsDisplay {
   width: 1000px;
   padding-top: 10px;
+  margin-bottom: 100px;
 }
 
 main .productsDisplay .productContainer {
-  min-height: 250px;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -594,9 +594,7 @@ main .productsDisplay .productContainer {
 }
 
 main .productsDisplay .productContainer .product {
-  display: table;
   width: calc(100% - 20px);
-  min-height: calc(100% - 20px);
   margin: 10px;
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
@@ -609,17 +607,48 @@ main .productsDisplay .productContainer .product:hover {
           transition-duration: 0.2s;
 }
 
+main .productsDisplay .productContainer .product .productPrice {
+  display: inline-block;
+  position: relative;
+  top: 56px;
+  left: 0px;
+  width: 56px;
+  height: 56px;
+  background-color: #b3cb91af;
+  line-height: 56px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 50px;
+}
+
 main .productsDisplay .productContainer .product .productImagenExtra {
   position: relative;
   width: 100%;
   height: 200px;
   background-color: #b3cb91;
+  -webkit-clip-path: polygon(50% 0, 99% 0, 100% 100%, 0 100%, 0 50%);
+          clip-path: polygon(50% 0, 99% 0, 100% 100%, 0 100%, 0 50%);
+  background-size: auto 100%;
+}
+
+main .productsDisplay .productContainer .product .productImagenExtra .productName {
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  padding: 5px 20px;
+  background-color: #b3cb91e1;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px 0px 0px 0px;
 }
 
 main .productsDisplay .productContainer .product .addToCart_Panel {
   height: 50px;
   width: 100%;
-  background-color: #728d4e;
+  font-weight: 500;
+  background-color: #4bac5c;
 }
 
 main .productsDisplay .productContainer .product .addToCart_Panel .counter {
@@ -631,8 +660,25 @@ main .productsDisplay .productContainer .product .addToCart_Panel .counter {
 }
 
 main .productsDisplay .productContainer .product .addToCart_Panel .counter .minus {
+  cursor: pointer;
   float: left;
   font-size: 25px;
+  -webkit-transition-duration: 0.05s;
+          transition-duration: 0.05s;
+}
+
+main .productsDisplay .productContainer .product .addToCart_Panel .counter .minus:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+main .productsDisplay .productContainer .product .addToCart_Panel .counter .minus:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 main .productsDisplay .productContainer .product .addToCart_Panel .counter .count {
@@ -644,11 +690,29 @@ main .productsDisplay .productContainer .product .addToCart_Panel .counter .coun
 }
 
 main .productsDisplay .productContainer .product .addToCart_Panel .counter .add {
+  cursor: pointer;
   float: right;
   font-size: 25px;
+  -webkit-transition-duration: 0.05s;
+          transition-duration: 0.05s;
+}
+
+main .productsDisplay .productContainer .product .addToCart_Panel .counter .add:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+main .productsDisplay .productContainer .product .addToCart_Panel .counter .add:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 main .productsDisplay .productContainer .product .addToCart_Panel .addToCart_button {
+  cursor: pointer;
   float: left;
   display: inline-block;
   height: 100%;
@@ -660,10 +724,17 @@ main .productsDisplay .productContainer .product .addToCart_Panel .addToCart_but
           box-sizing: border-box;
 }
 
+main .productsDisplay .productContainer .product .addToCart_Panel .addToCart_button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
 main .productsDisplay .productContainer .product .addToCart_Panel .addToCart_button p {
   padding: 10px;
   height: 30px;
-  color: white;
+  color: #cdf7d5;
   background-color: #171d0d;
   border-radius: 4px;
   -webkit-transition-duration: 0.05s;
