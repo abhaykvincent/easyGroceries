@@ -372,26 +372,104 @@ header {
   display: table;
   width: 100%;
   height: 100px;
-  background-color: #81ba30;
   z-index: 100;
 }
 
+header .header-wrap {
+  padding: 10px;
+  background: linear-gradient(45deg, #81ba30 0%, #24a47b 100%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-wrap .header-right #search {
+  float: right;
+  height: 40px;
+  width: 250px;
+  padding: 0px 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 0px;
+}
+
+header .header-wrap .header-right #search::-webkit-input-placeholder {
+  color: #81ba30;
+}
+
+header .header-wrap .header-right #search:-ms-input-placeholder {
+  color: #81ba30;
+}
+
+header .header-wrap .header-right #search::-ms-input-placeholder {
+  color: #81ba30;
+}
+
+header .header-wrap .header-right #search::placeholder {
+  color: #81ba30;
+}
+
+header .header-wrap .header-right .cart_button {
+  float: right;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  color: #81ba30;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+header .header-wrap .header-left .logo {
+  float: left;
+  display: inline-block;
+}
+
+header .header-wrap .header-left .logo img {
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px;
+  height: 40px;
+}
+
+header .header-wrap .header-left .logo .logo-name {
+  float: left;
+  height: 30px;
+  margin-top: 15px;
+  margin-right: 30px;
+  display: inline-block;
+  font-size: 200%;
+  line-height: 30px;
+}
+
+header .header-wrap .header-left .header_dropdowns {
+  float: left;
+  margin-top: 18px;
+  height: 30px;
+}
+
+header .header-wrap .header-left .header_dropdowns .options {
+  display: inline-block;
+  width: 150px;
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: px;
+}
+
+header .header-wrap .header-left .header_dropdowns .options i.drop-down {
+  float: right;
+}
+
 header .cell {
-  height: 100px;
-}
-
-header .cell:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.082);
-}
-
-header .cell:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.13);
+  height: 60px;
 }
 
 main {
   position: relative;
   width: 100%;
-  top: 100px;
+  top: 80px;
   background: #23262a;
   min-height: 1000px;
 }
