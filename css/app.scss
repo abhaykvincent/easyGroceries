@@ -2,17 +2,14 @@
 
 body{
     width: 100%;
+    font-family: "Avenir Next";
 }
 
 header{
     position: fixed;
     display: table;
     width: 100%;
-<<<<<<< HEAD
-    height: 100px;
-=======
     height: 80px;
->>>>>>> slider
     z-index: 100;
     .header-wrap{
         padding: 10px;
