@@ -12,10 +12,21 @@
 
 <body>
     <header>
-        <div class="grid-x grid-padding-x">
-            <div class="cell large-3">LOGO</div>
-            <div class="cell large-5">Whatever's left!</div>
-            <div class="cell large-4">Whatever's left!</div>
+        <div class="header-wrap grid-x grid-padding-x">
+            <div class="header-left cell large-6">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="" srcset="">
+                    <h1 class="logo-name">Easy Groceries</h1>
+                </div>
+                <div class="header_dropdowns">
+                    <p class="options">Catogries<i class="drop-down fas fa-chevron-down"></i></p>
+                    <p class="options">Families <i class="drop-down fas fa-chevron-down"></i></p>
+                </div>
+            </div>
+            <div class="header-right cell large-6">
+                <div class="cart_button"><i class="fas fa-shopping-cart"></i></div>
+                <input type="text" id="search" name="search" placeholder="Search...">
+            </div>
         </div>
     </header>
     <main class="grid-container full">
@@ -25,7 +36,12 @@
             <div class="cartLength">12</div>
         </div>
         <div class="grid-container  full imageSlider">
-            <div class="grid-x grid-padding-x">
+            <div class="banner grid-x grid-padding-x">
+                <div class="bannerImg"></div>
+                <div class="banner-description">
+                </div>
+                <div class="shopNow"></div>
+                <div class="banner-productDetails"></div>
             </div>
         </div>
 
@@ -132,6 +148,8 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script src="src/js/vendor/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/9f2e6fd0b8.js" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 
