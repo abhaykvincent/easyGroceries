@@ -130,6 +130,28 @@ let products=[
     },
 ]
 //function definitions
+function header(){
+    $(".options").data("active", "false");
+    $(".options").click(function (e) { 
+        e.preventDefault();
+        console.log($(this).data("active") );
+        if($(this).data("active") === "false")
+        {
+            $(this).addClass("optionsListActive");
+            $(".options").data("active", "true");
+
+            $("i",this).removeClass("fa-chevron-down")
+            $("i",this).addClass("fa-chevron-up")
+        }
+        else{
+            $(".options").removeClass("optionsListActive");
+            $(".options").data("active", "false");
+
+            $("i",this).removeClass("fa-chevron-up")
+            $("i",this).addClass("fa-chevron-down")
+        }
+    });
+}
 function displayProducts(){
     content="";
     products.forEach(product => {
@@ -153,12 +175,10 @@ function displayProducts(){
     });
     $(".products").append(content);
     //Functionality
-    $(".add").click(function (e) { 
-        e.preventDefault();
-        
-    });
 }
         
 $(document).ready(function () {
+//header
+header();
 displayProducts();
 });

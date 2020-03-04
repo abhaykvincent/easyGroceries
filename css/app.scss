@@ -71,12 +71,16 @@ header{
                 .options{
                     display: inline-block;
                     width: 150px;
-                    padding: 5px 15px;
                     background-color: rgba(0, 0, 0, 0.1);
                     border-radius: 2px;
+                    .optionName{
+
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                    padding: 5px 15px;
+                    }
                     .optionsList{
-                        width: 200px;
-                        height: 400px;
+                        width: calc(100% + 30px);
+                        height: 0px;
                         margin-top: 5px;
                         margin-left: -15px;
                         background-color: rgba(0, 0, 0, 0.1);
@@ -84,6 +88,10 @@ header{
                     i.drop-down{
                         float: right
                     }
+                }
+
+                .optionsListActive{
+                    height: 400px;
                 }
             }
         }
